@@ -22,8 +22,9 @@ def correct_grammar(input_string):
 
 def main():
     st.title("Grammar Correction App")
-    input_text = st.text_area("Enter a sentence:")
     st.text("Diomedes L. Potente BSCS 3A")
+    input_text = st.text_area("Enter a sentence:")
+    
     
     if st.button("Correct Grammar"):
         corrected_text = correct_grammar(input_text)
