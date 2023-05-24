@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 import os
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["api_key"]
 
 
 def correct_grammar(input_string):
