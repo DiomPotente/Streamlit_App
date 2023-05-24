@@ -23,15 +23,12 @@ def correct_grammar(input_string):
 def main():
     st.title("Grammar Correction App")
     input_text = st.text_area("Enter a sentence:")
-
-    name = st.text_input("Diomedes L. Potente BSCS 3A")  
+    st.text("Diomedes L. Potente BSCS 3A")
     
     if st.button("Correct Grammar"):
         corrected_text = correct_grammar(input_text)
         st.success("Corrected Sentence:")
         st.write(corrected_text)
-
-    st.write("Hello, " + name)  # Display the name
 
 
 if __name__ == "__main__":
